@@ -1,0 +1,12 @@
+apiVersion: v1
+entries:
+  stocktraderChart:
+  - apiVersion: v1
+    created: 2019-05-09T19:38:11.029109-04:00
+    description: A Helm chart for Kubernetes
+    digest: 3a6b524e8ce1c6ac81e23939b7535a148924578f71c42c6195737eba3e106072
+    name: stocktraderChart
+    urls:
+    - chart/stocktraderChart-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-05-09T19:38:11.0155665-04:00
