@@ -1,0 +1,18 @@
+---
+  apiVersion: mcm.ibm.com/v1alpha1
+  kind: PlacementPolicy
+  metadata:
+    labels:
+      app: stocktrader
+      chart: stocktrader-1.0.0
+      name: stocktrader-app-placement
+      servicekind: ApplicationService
+    name: stocktrader
+  spec:
+    clusterReplicas: 1
+    clusterLabels:
+      matchLabels:
+        name: social-dev-1
+    resourceHint:
+      type: cpu
+      order: desc

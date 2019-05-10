@@ -1,0 +1,14 @@
+apiVersion: mcm.ibm.com/v1alpha1
+kind: Deployable
+metadata:
+  name: stocktrader
+  labels:
+    serviceKind: ApplicationService
+    app: stocktrader
+    placementPolicy: "stocktrader"
+spec:
+  deployer:
+    kind: helm
+    helm:
+      chartURL: https://raw.githubusercontent.com/jnpacker/stocktrader/master/chart/stocktraderChart-0.1.0.tgz
+      namespace: default

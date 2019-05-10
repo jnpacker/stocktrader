@@ -1,0 +1,12 @@
+ apiVersion: mcm.ibm.com/v1alpha1
+ kind: PlacementBinding
+ metadata:
+   name: binding1
+ placementRef:
+   apiGroup: mcm.ibm.com
+   kind: PlacementPolicy
+   name: stocktrader
+ subjects:
+ - name: stocktrader
+   apiGroup: mcm.ibm.com
+   kind: Deployable
